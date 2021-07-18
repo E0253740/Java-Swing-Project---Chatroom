@@ -1,2 +1,3 @@
 # Java-Swing-Project---Chatroom
-A practice of Java Swing and Socket.
+This is project is a practice of Java Swing and Socket.
+
