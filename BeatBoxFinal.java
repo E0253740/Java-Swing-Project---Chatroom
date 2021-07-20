@@ -41,7 +41,7 @@ public class BeatBoxFinal {
         userName = name;
         // open connection to the server
         try {
-            Socket sock = new Socket("localhost",5000); // Here I just use the local host, choose port 5000
+            Socket sock = new Socket("localhost",4242); // Here I just use the local host, choose port 4242
             out = new ObjectOutputStream(sock.getOutputStream());
             in = new ObjectInputStream(sock.getInputStream());
             Thread remote = new Thread(new RemoteReader());
