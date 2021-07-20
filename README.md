@@ -11,4 +11,13 @@ Specially, we can see **inner class** here, which is quite special and the appli
 The details is commented in the java file, while I'll show the visual of progress here.<br/>
 
 **startUp** is the method that calls the other methods and create socket connection <br/>
-**buildGUI** is where we use Java Swing to build the GUI (visualisation) <br/>
+**buildGUI** is where we use Java Swing to build the GUI (visualisation) <br/><br/>
+**A Brief Overview of Client's GUI:** <br/><br/>
+![image](https://user-images.githubusercontent.com/66471809/126269443-41c340bf-80e9-4af4-bdb0-a53ef6a20bcb.png)
+These are the classes used from Java Swing:
+JFrame: For the frame of the whole design <br/>
+JPanel: We place the JPanel on the frame so that we can add more functions on it<br/>
+JButton: An important function, we add ActionListener on the JButton so that when we click on the button, it'll execuate specific function, then we are able to achieve simple human-computer interaction. **Notice:** For each JButton, there should be a ***inner class*** which implements ***ActionListener*** <br/>
+
+
+
