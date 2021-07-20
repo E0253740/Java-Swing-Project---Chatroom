@@ -6,7 +6,7 @@ Two main Java files can be found here:
 
 Throught the Java Socket API, we are able to create a chatroom that allows online chat & customize music. Java Swing is used for GUI, which is the most direct part user can get access to.
 
-## BeatBoxFinal
+## BeatBoxFinal.java
 This java class includes the application of multiple **data structures** such as array, list (ArrayList & LinkedList) and HashMap. <br/>
 Java Swing package is used for basic **GUI** (Graph User Interface). <br/>
 Specially, we can see **inner class** here, which is quite special and the application here is a good demonstration of how we apply inner class concept.<br/>
@@ -21,5 +21,7 @@ These are the classes used from Java Swing:
 **JPanel**: We place the JPanel on the frame so that we can add more functions on it<br/>
 **JButton**: An important function, we add ActionListener on the JButton so that when we click on the button, it'll execuate specific function, then we are able to achieve simple human-computer interaction. **Notice:** For each JButton, there should be a ***inner class*** which implements ***ActionListener*** <br/>
 **JTextField**: The textfield for the user to send message, what user types here would be stored as String by .getText() method and then sent to the online server.
+**JCheckBox**: The 16 * 16 girds. Tick the box can lead to check in music sequence.
 
+class RemoteReader is used for I/O Stream to set up the connection between client and server.
 
