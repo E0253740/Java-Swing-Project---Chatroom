@@ -15,13 +15,13 @@ The details is commented in the java file, while I'll show the visual of progres
 **startUp** is the method that calls the other methods and create socket connection <br/>
 **buildGUI** is where we use Java Swing to build the GUI (visualisation) <br/><br/>
 **A Brief Overview of Client's GUI:** <br/><br/>
-![image](https://user-images.githubusercontent.com/66471809/126269443-41c340bf-80e9-4af4-bdb0-a53ef6a20bcb.png)
+![image](https://user-images.githubusercontent.com/66471809/126646912-138bc467-97ef-446e-82c2-ef018d2deeed.png)
 These are the classes used from Java Swing:
 **JFrame**: For the frame of the whole design <br/>
 **JPanel**: We place the JPanel on the frame so that we can add more functions on it<br/>
 **JButton**: An important function, we add ActionListener on the JButton so that when we click on the button, it'll execuate specific function, then we are able to achieve simple human-computer interaction. **Notice:** For each JButton, there should be a ***inner class*** which implements ***ActionListener*** <br/>
-**JTextField**: The textfield for the user to send message, what user types here would be stored as String by .getText() method and then sent to the online server.
-**JCheckBox**: The 16 * 16 girds. Tick the box can lead to check in music sequence.
-
+**JTextField**: The textfield for the user to send message, what user types here would be stored as String by .getText() method and then sent to the online server.<br/>
+**JCheckBox**: The 16 * 16 girds. By selecting the checkbox, different track and sequence would be created.<br/>
+**JScrollPanel** This area is to show the message that has been sent to the server. A scroll strip would appear if there's multiple messages.<br/>
 class RemoteReader is used for I/O Stream to set up the connection between client and server.
 
