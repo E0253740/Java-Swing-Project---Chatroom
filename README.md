@@ -27,3 +27,9 @@ class RemoteReader is used for I/O Stream to set up the connection between clien
 
 ## MusicServer.java
 This file provides a virtual server for BeatBox progress, throught Java Socket and I/O stream, the BeatBox client is able to connect to the server at port 4242 and send messages. First, a Socket is created and input would be read through the input stream, then the message would be send to the server and presented to every user. 
+
+![image](https://user-images.githubusercontent.com/66471809/127653064-a0725023-6836-4d60-ba2d-8afff1bc7e39.png)
+
+## Start Progress
+To start the progress, we start with the MusicServer.java. Compile it will command, then the port:4242 will be waiting for connection. <br/>
+Then we start with BeatBoxFinal.java - the file would connect to port 4242. After the connection has been established, **"got a connection"** would be seen in MusicServer.java's command window.
