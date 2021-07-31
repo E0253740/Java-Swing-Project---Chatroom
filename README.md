@@ -25,6 +25,8 @@ These are the classes used from Java Swing:
 **JScrollPanel** This area is to show the message that has been sent to the server. A scroll strip would appear if there's multiple messages.<br/>
 class RemoteReader is used for I/O Stream to set up the connection between client and server.
 
+The Midi package allows the user to create their own sequence and add to the track.
+
 ## MusicServer.java
 This file provides a virtual server for BeatBox progress, throught Java Socket and I/O stream, the BeatBox client is able to connect to the server at port 4242 and send messages. First, a Socket is created and input would be read through the input stream, then the message would be send to the server and presented to every user. 
 
