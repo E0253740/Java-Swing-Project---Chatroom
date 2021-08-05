@@ -34,7 +34,7 @@ public class BeatBoxFinal {
     int[] instruments = {35,42,46,38,49,39,50,60,70,72,64,56,58,47,67,63};
     public static void main(String[] args) {
         new BeatBoxFinal().startUp(args[0]); // e.g. %java BeatBoxFinal theFlash
-        // args[0] is the screen name or username
+        // args[0] is the screen name or username, start with the "java BeatBoxFinal"
     }
 
     public void startUp (String name){
@@ -42,8 +42,8 @@ public class BeatBoxFinal {
         // open connection to the server
         try {
             Socket sock = new Socket("localhost",4242); // Here I just use the local host, choose port 4242
-            out = new ObjectOutputStream(sock.getOutputStream());
-            in = new ObjectInputStream(sock.getInputStream());
+            out = new ObjectOutputStream(sock.getOutputStream()); // out stream
+            in = new ObjectInputStream(sock.getInputStream()); // in stream
             Thread remote = new Thread(new RemoteReader());
             remote.start();
         } catch (Exception ex) {
@@ -128,7 +128,7 @@ public class BeatBoxFinal {
 
     }
 
-    public void setUpMidi(){
+    public void setUpMidi(){ // mainly use of Midi package, for contruction of sequence
         try{
             sequencer = MidiSystem.getSequencer();
             sequencer.open();
@@ -140,7 +140,7 @@ public class BeatBoxFinal {
     }
 
     // Important: transfer the selection to MIDI and add onto the track
-    public void buildTrackAndStart(){
+    public void buildTrackAndStart(){ 
         ArrayList<Integer> tracklist = null; // This will hold the instrument for each
         sequence.deleteTrack(track);
         track = sequence.createTrack();
@@ -167,13 +167,13 @@ public class BeatBoxFinal {
             sequencer.setTempoInBPM(120);
         }catch (Exception e){e.printStackTrace();}
     }
-
+    // implements action listener for each button above, so that when we click on the button, the computer would know which action to take
     public class MyStartListener implements ActionListener{ // this is the first inne class, is listener of the button
         public void actionPerformed(ActionEvent a){
             buildTrackAndStart();
         }
     }
-
+    
     public class MyStopListener implements ActionListener {
         public void actionPerformed(ActionEvent a){
             sequencer.stop();
