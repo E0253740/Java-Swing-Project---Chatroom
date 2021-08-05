@@ -35,4 +35,5 @@ This file provides a virtual server for BeatBox progress, throught Java Socket a
 
 ## Start Progress
 To start the progress, we start with the MusicServer.java. Compile it will command, then the port:4242 will be waiting for connection. <br/>
-Then we start with BeatBoxFinal.java - the file would connect to port 4242. After the connection has been established, **"got a connection"** would be seen in MusicServer.java's command window.
+Then we start with BeatBoxFinal.java - the file would connect to port 4242. After the connection has been established, **"got a connection"** would be seen in MusicServer.java's command window. <br/>
+What text the client send would be visible to all users who are connected to the server.
