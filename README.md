@@ -1,5 +1,5 @@
 # Java Swing Project - Online Chatroom
-I did this project when I was learning "Head First Java". This is the project from the book, which is a good practive of multiple Java knowledge.<br/><br/>
+I did this project when I was learning "Head First Java". This is the project from the book, which is a good practice of multiple Java knowledge.<br/><br/>
 This is project is a practice of Java Swing and Socket.<br/>
 Two main Java files can be found here: 
 1. **BeatBoxFinal** - for client side (客户端)
